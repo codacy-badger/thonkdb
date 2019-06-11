@@ -8,6 +8,8 @@ TAGS = [
     "utilities",
     "enhancements"
 ]
+with open("README.md", mode="r") as FILE_HANDLER:
+    LONG_DESCRIPTION = FILE_HANDLER.read()
 CLASSIFIERS = [
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
