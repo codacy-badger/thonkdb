@@ -8,8 +8,6 @@ TAGS = [
     "utilities",
     "enhancements"
 ]
-with open("README.md", mode="r") as FILE_HANDLER:
-    LONG_DESCRIPTION = FILE_HANDLER.read()
 CLASSIFIERS = [
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
@@ -42,7 +40,7 @@ CLASSIFIERS = [
     "Natural Language :: English",
 ]
 MainURL = "https://github.com/blizma/thonkdb"
-URLs = 
+URLs = \
     {
         "Bug Tracker": "https://github.com/blizma/thonkdb//issues",
         "Source Code": "https://github.com/blizma/thonkdb/",
@@ -54,8 +52,6 @@ setuptools.setup(
     author="Blizma",
     author_email="me@blizma.us",
     description="Storing data in Python, easily.",
-    long_description=LONG_DESCRIPTION,
-    long_description_content_type="text/markdown",
     url=MainURL,
     license="MIT",
     packages=setuptools.find_packages(),
