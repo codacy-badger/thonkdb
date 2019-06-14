@@ -1,12 +1,19 @@
 import json
 import random
 import os
+import pickle
+import pickle
 
-class JSON():
-    def _read_json(self, filename):
-        with open(filename, encoding='utf-8', mode="r") as f:
-            data = json.load(f)
-        return data
 
-def get_value(path, value):
-    #####
+class Thonk():
+    def store(data, data_file):
+        fw = open(data_file, 'wb')
+        pickle.dump(data, fw)
+        fw.close()
+
+    def get_value(data_file, name):
+        fd = open(data_file, 'rb')
+        dataset = pickle.load(fd)
+        return dataset[name]
+
+thonk = Thonk()
